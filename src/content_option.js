@@ -64,8 +64,10 @@ const dataportfolio = [{
 
 // Contact Information
 const contactConfig = {
-    email: "test@test.com",
-    phone: "12345678"
+    EMAIL: "joshjkwatson@gmail.com",
+    PK: "qKI5Ms0KDaUn94jB5",
+    SERVICE_ID: "service_wqyo9rv",
+    TEMPLATE_ID: "template_k4ldf1f"
 };
 
 // Social Information
