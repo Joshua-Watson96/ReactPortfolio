@@ -64,8 +64,8 @@ const dataportfolio = [{
 
 // Contact Information
 const contactConfig = {
-    EMAIL{process.env.EMAIL},
-    PK = {process.env.PK},
+    EMAIL: process.env.EMAIL,
+    PK: process.env.PK,
     SERVICE_ID: "service_wqyo9rv",
     TEMPLATE_ID: "template_k4ldf1f"
 };

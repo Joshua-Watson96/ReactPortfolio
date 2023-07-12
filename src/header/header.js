@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./header.css"
 import { nameText, socialprofiles  } from "../content_option";
+import { Link } from "react-router-dom";
 
 const Headermain = () => {
     const [isActive, setActive] = useState("false");
@@ -24,19 +25,19 @@ const Headermain = () => {
                     <div className="menu__container p-3">
                         <ul className="the_menu">
                             <li className="menu_item">
-                                <Link onClick={handleToggle} to="/" className="my-3">Home</Link>
+                                <Link to="/ReactPortfolio" className="my-3">Home</Link>
                             </li>
                             <li className="menu_item">
-                                <Link onClick={handleToggle} to="/" className="my-3">Portfolio</Link>
+                                <Link to="/" className="my-3">Portfolio</Link>
                             </li>
                             <li className="menu_item">
-                                <Link onClick={handleToggle} to="/" className="my-3">About</Link>
+                                <Link  to="/about" className="my-3">About</Link>
                             </li>
                             <li className="menu_item">
-                                <Link onClick={handleToggle} to="/" className="my-3">Resume</Link>
+                                <Link  to="/" className="my-3">Resume</Link>
                             </li>
                             <li className="menu_item">
-                                <Link onClick={handleToggle} to="/" className="my-3">Contact</Link>
+                                <Link  to="/" className="my-3">Contact</Link>
                             </li>
                         </ul>
                     </div>
