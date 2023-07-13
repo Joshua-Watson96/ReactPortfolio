@@ -38,16 +38,35 @@ export const About = () => {
                         <h3 className="color_sec py-4"> Work Timeline</h3>
                     </Col>
                     <Col lg="7">
-                        {worktimeline}
+                        <tbody> 
+                            {worktimeline.map((data, i) => {
+                                return(
+                                    <tr key={i}>
+                                        <th scope="row">{data.jobtitle}</th>
+                                        <td>{data.where}</td>
+                                        <td>{data.date}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                        
                     </Col>
                 </Row>
                 <Row className="sec_sp">
                     <Col lg="7">
                         <h3 className="color_sec py-4">Skills </h3>
-                        {skills}
+                        {skills.map((data, i) => {
+                            return(
+                                <div key={i}>
+                                    <h3 className ="skills-name">{data.name}</h3>
+                                </div>
+                            )
+                        })}
                     </Col>
                 </Row>
             </Container>
         </HelmetProvider>
     )
 }
+
+export default About

@@ -28,16 +28,16 @@ const Headermain = () => {
                                 <Link to="/ReactPortfolio" className="my-3">Home</Link>
                             </li>
                             <li className="menu_item">
-                                <Link to="/" className="my-3">Portfolio</Link>
+                                <Link to="/portfolio" className="my-3">Portfolio</Link>
                             </li>
                             <li className="menu_item">
-                                <Link  to="/about" className="my-3">About</Link>
+                                <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                             </li>
                             <li className="menu_item">
-                                <Link  to="/" className="my-3">Resume</Link>
+                                <Link  to="/resume" className="my-3">Resume</Link>
                             </li>
                             <li className="menu_item">
-                                <Link  to="/" className="my-3">Contact</Link>
+                                <Link  to="/contact" className="my-3">Contact</Link>
                             </li>
                         </ul>
                     </div>

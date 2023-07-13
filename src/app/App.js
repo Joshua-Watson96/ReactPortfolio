@@ -1,19 +1,22 @@
 import React from "react";
-// import { Helmet, HelmetProvider } from "react-helmet-async";
-// import { meta } from "../../content_option";
-// import { Container, Row, Col, Alert } from "react-bootstrap";
-// import { contactConfig } from "../../content_option";
+import { BrowserRouter as Router, useLocation} from "react-router-dom";
 import Headermain from "../header/header";
+import AppRoutes from "./routes";
 
-function App() {
+function location() {
+    const { pathname } = useLocation()
+    pathname
+}
+export default function App() {
     return(
-        <>
+        
+        <Router basename="ReactPortfolio">
         <Headermain/>
-        <div>
-            This is your app.js
-        </div>
-        </>
+            <AppRoutes/>
+        
+        
+        </Router>
     )
 }
 
-export default App
+
