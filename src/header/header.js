@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./header.css"
 import { nameText, socialprofiles  } from "../content_option";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa"
 
 const Headermain = () => {
     const [isActive, setActive] = useState("false");
@@ -13,40 +14,39 @@ const Headermain = () => {
 
     return(
         <>
-        <header className="fixed-top site__header">
-         <div className="d-flex align-items-center justify-content-between">
-            <Link className="navbar-brand nav_ac">
+        <header className="header">
+        
+            <div className="fixed-header">
+                <div className="nameTitle">
                 {nameText}
-            </Link>
-            </div>
-
-            <div className="bg__menu h-100">
-                <div className="menu__wrapper">
-                    <div className="menu__container p-3">
+                </div> 
+                <div>
+                    <div>
                         <ul className="the_menu">
                             <li className="menu_item">
-                                <Link to="/ReactPortfolio" className="my-3">Home</Link>
+                                <Link to="/" className="link">Home</Link>
                             </li>
                             <li className="menu_item">
-                                <Link to="/portfolio" className="my-3">Portfolio</Link>
+                                <Link to="/portfolio" className="link" >Portfolio</Link>
                             </li>
                             <li className="menu_item">
-                                <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                                <Link  to="/about" className="link" >About</Link>
                             </li>
                             <li className="menu_item">
-                                <Link  to="/resume" className="my-3">Resume</Link>
+                                <Link  to="/resume" className="link" >Resume</Link>
                             </li>
                             <li className="menu_item">
-                                <Link  to="/contact" className="my-3">Contact</Link>
+                                <Link  to="/contact"className="link"  >Contact</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-                <a href={socialprofiles.github}>Github</a>
-                <a href={socialprofiles.linkedin}>Linkedin</a>
+            <div className="menu_footer ">
+            <div className="footer-icons">
+                <a href={socialprofiles.github}><FaGithub /></a>
+                <a href={socialprofiles.linkedin}><FaLinkedin /></a>
+                <a href={socialprofiles.stackOverflow}><FaStackOverflow /></a>
             </div>
             </div>
 

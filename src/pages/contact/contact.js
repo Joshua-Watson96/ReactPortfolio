@@ -3,7 +3,7 @@ import * as emailjs from "emailjs-com";
 import "./contact.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
-import { Container, Row, Col, Alert } from "react-bootstrap";
+import { Container, Row, Col, Alert, Button } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
 export const ContactMe = () => {
@@ -33,7 +33,7 @@ export const ContactMe = () => {
         contactConfig.EMAIL,
         contactConfig.TEMPLATE_ID,
         templateParams,
-        contactConfig.PK
+        contactConfig.USER_ID
     )
     .then(
         (result) => {
@@ -71,11 +71,80 @@ export const ContactMe = () => {
                     <title>{meta.title} | Contact </title>
                     <meta name="description" content={meta.description} />
                 </Helmet>
-                <Row className="mb-5 mt-3 pt-md-3">
-                    <Col lg="8">
-                        <h1 className="display-4 mb-4"> Contact Me</h1>
-                        <hr className="t_border my-4 ml-0 text-left" />
+                <Row className="title">
+                    <Col >
+                    
+                        
                     </Col>
+                </Row>
+                <Row className="formdata">
+                    <Col >
+                    <Alert
+                     variant ={formData.variant}
+                     className={`${
+                        formData.show ? "d-block" : "d-none"}`}
+                        onClose={() => setFormdata({show : false})}
+                        dismissible>
+                            <p className="my-0">{formData.alertmessage}</p>
+                    </Alert>
+                    </Col>
+                    <Col  className="title">
+                        
+                        <address>
+                            <strong>Email me! </strong>{" "}
+                            <a href={`mailto:${contactConfig.EMAIL}`}>
+                                
+                            </a>
+                        </address>
+                        </Col>
+                        <Col className="title">
+                            <form onSubmit={handleSubmit} className="contact-form">
+                                <Row>
+                                    <Col  className="form-group">
+                                        <input 
+                                        className="form-control"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Please enter your name here!"
+                                        value={formData.name || ""}
+                                        type="text"
+                                        required
+                                        onChange={handlechange} />
+                                    </Col>
+                                    <Col   className="form-group">
+                                        <input
+                                        className="form-control"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Please enter your email here!"
+                                        type="email"
+                                        value={formData.email || "" }
+                                        required
+                                        onChange={handlechange}/>
+                                    </Col>
+                                </Row>
+                                <textarea 
+                                className="contact-form-message"
+                                id="message"
+                                name="message"
+                                placeholder="Message"
+                                rows="6"
+                                value={formData.message}
+                                onChange={handlechange}
+                                required>
+
+                                </textarea>
+                                <br />
+                                <Row>
+                                    <Col  className="form-button">
+                                        <button className="btnSend" type="submit">
+                                            {formData.loading ? "Sending" : "Send"}
+                                        </button>
+                                    </Col>
+                                </Row>
+                            </form>
+                        </Col>
+
                 </Row>
             </Container>
         </HelmetProvider>

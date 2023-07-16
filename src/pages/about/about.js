@@ -8,6 +8,8 @@ import {
     worktimeline,
     skills
 } from "../../content_option";
+import Image from "./images/max-me.jpg"
+
 
 export const About = () => {
     return (
@@ -18,26 +20,29 @@ export const About = () => {
                     <title>About | {meta.title} </title>
                     <meta name="description" content={meta.description} />
                 </Helmet>
-                <Row className="mb-5 mt-3 pt-md-3">
-                    <Col lg="8">
-                        <h1 className="display-4 mb-4">About me</h1>
+                <body className="body">
+                    
+
+                <Row className="aboutTitle">
+                    <Col>
+                        <h2 >Here is a little information about me</h2>
                     </Col>
                 </Row>
-                <Row className="sec_sp">
-                    <Col lg="5">
-                        <h3 className="color_sec py-4">{dataabout.title}</h3>
-                    </Col>
-                    <Col lg="7" className="d-flex align-items-center">
-                        <div>
+                <Row className="title">
+                    <Col className="col-container" >
+                    <div className="image">
+                        <img src={Image} alt="max-me" className="image" />
+                    </div>
+                        <div className="infoText">
                             <p>{dataabout.aboutme}</p>
                         </div>
                     </Col>
                 </Row>
-                <Row className="sec_sp">
-                    <Col lg="5">
-                        <h3 className="color_sec py-4"> Work Timeline</h3>
+                <Row >
+                    <Col >
+                        <h3 className="title-Work"> Work Timeline</h3>
                     </Col>
-                    <Col lg="7">
+                    <Col className="workTimeline">
                         <tbody> 
                             {worktimeline.map((data, i) => {
                                 return(
@@ -52,21 +57,20 @@ export const About = () => {
                         
                     </Col>
                 </Row>
-                <Row className="sec_sp">
-                    <Col lg="7">
-                        <h3 className="color_sec py-4">Skills </h3>
+                <Row>
+                    <Col className="skills" >
+                        <h2 className="title-Skills">Skills </h2>
                         {skills.map((data, i) => {
                             return(
                                 <div key={i}>
-                                    <h3 className ="skills-name">{data.name}</h3>
+                                    <h3 >{data.name}</h3>
                                 </div>
                             )
                         })}
                     </Col>
                 </Row>
+                </body>
             </Container>
         </HelmetProvider>
     )
 }
-
-export default About
