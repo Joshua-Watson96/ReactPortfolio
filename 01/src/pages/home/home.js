@@ -1,7 +1,8 @@
 import React from "react";
 import "../home/home.css"
 import { Helmet, HelmetProvider } from "react-helmet-async"
-import { introdata } from "../../content_option";
+import { introdata, meta } from "../../content_option";
+import { Link } from "react-router-dom"
 import Typewriter from "typewriter-effect";
 
 export const Home = () => {

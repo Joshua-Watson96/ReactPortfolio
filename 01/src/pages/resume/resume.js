@@ -3,7 +3,7 @@ import {Document, Page } from 'react-pdf'
 import "./resume.css";
 import ResumePDF from "./resume.pdf"
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row,  Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 export const Resume = () => {
     return(

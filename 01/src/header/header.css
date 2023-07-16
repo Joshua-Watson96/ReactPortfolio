@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color:black;
+  }
+  
+  .fixed-header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .the_menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
+  .menu_item {
+    margin-right: 20px; 
+  }
+  
+  .menu_footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .footer-icons {
+    display: flex;
+  }
+  
+  .footer-icons a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .link {
+    color: white;
+  }

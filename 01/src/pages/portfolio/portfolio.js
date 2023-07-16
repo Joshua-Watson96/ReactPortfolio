@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio } from "../../content_option";
 
 export const Portfolio = () => {
