@@ -100,6 +100,7 @@ export const ContactMe = () => {
                         <Col className="title">
                             <form onSubmit={handleSubmit} className="contact-form">
                                 <Row>
+                                    {/* user enters name */}
                                     <Col  className="form-group">
                                         <input 
                                         className="form-control"
@@ -112,6 +113,7 @@ export const ContactMe = () => {
                                         onChange={handlechange} />
                                     </Col>
                                     <Col   className="form-group">
+                                        {/* user enters email */}
                                         <input
                                         className="form-control"
                                         id="email"
@@ -124,6 +126,7 @@ export const ContactMe = () => {
                                     </Col>
                                 </Row>
                                 <textarea 
+                                // user enters message they want to send
                                 className="contact-form-message"
                                 id="message"
                                 name="message"

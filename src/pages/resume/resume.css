@@ -1,9 +1,17 @@
+/* fixes issue where the resume was being duplicated */
 span[role="presentation"]{
     display:none;
 }
 
+/* sets the buttons properties */
 a{
     text-decoration: none;
     color:black;
 }
+  
 
+  /* makes the website responsive */
+@media screen and (max-width: 768px) {
+
+}
+  

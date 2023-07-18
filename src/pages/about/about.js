@@ -25,6 +25,7 @@ export const About = () => {
 
                 <Row className="aboutTitle">
                     <Col>
+                    {/* page title */}
                         <h2 >Here is a little information about me</h2>
                     </Col>
                 </Row>
@@ -33,6 +34,7 @@ export const About = () => {
                     <div className="image">
                         <img src={Image} alt="max-me" className="image" />
                     </div>
+                    {/* displays the about me info from content-options */}
                         <div className="infoText">
                             <p>{dataabout.aboutme}</p>
                         </div>
@@ -40,10 +42,12 @@ export const About = () => {
                 </Row>
                 <Row >
                     <Col >
+                    {/* Work Timeline title */}
                         <h3 className="title-Work"> Work Timeline</h3>
                     </Col>
                     <Col className="workTimeline">
                         <tbody> 
+                            {/* displays the Work Timeline data from content-options */}
                             {worktimeline.map((data, i) => {
                                 return(
                                     <tr key={i}>
@@ -59,7 +63,9 @@ export const About = () => {
                 </Row>
                 <Row>
                     <Col className="skills" >
+                        {/* Skills title */}
                         <h2 className="title-Skills">Skills </h2>
+                        {/* displays the data from Skills content-options */}
                         {skills.map((data, i) => {
                             return(
                                 <div key={i}>

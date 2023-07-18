@@ -13,10 +13,12 @@ export const Home = () => {
         <body id="background">
         
             <div className ="intro">
+                {/* Shows introdata title from content-options */}
                 <h2 className="align-self-center"> {introdata.title}</h2>
                 <h3 className="animateText">
                 <Typewriter options={{
                     strings: [
+                        // shows the animated text on screen
                         introdata.animated.first,
                         introdata.animated.second,
                         introdata.animated.third,
