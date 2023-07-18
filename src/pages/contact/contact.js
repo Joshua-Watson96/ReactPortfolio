@@ -63,6 +63,7 @@ export const ContactMe = () => {
         });
     };
 
+   
     return (
         <HelmetProvider>
             <Container>
@@ -71,6 +72,10 @@ export const ContactMe = () => {
                     <title>{meta.title} | Contact </title>
                     <meta name="description" content={meta.description} />
                 </Helmet>
+
+                <Row>
+
+                </Row>
                 <Row className="title">
                     <Col >
                     
@@ -113,8 +118,8 @@ export const ContactMe = () => {
                                         onChange={handlechange} />
                                     </Col>
                                     <Col   className="form-group">
-                                        {/* user enters email */}
-                                        <input
+                                         {/* user enters email */}
+                                         <input
                                         className="form-control"
                                         id="email"
                                         name="email"
@@ -124,9 +129,9 @@ export const ContactMe = () => {
                                         required
                                         onChange={handlechange}/>
                                     </Col>
-                                </Row>
-                                <textarea 
-                                // user enters message they want to send
+                                </Row> 
+                                <textarea
+                                // {/* // user enters message they want to send
                                 className="contact-form-message"
                                 id="message"
                                 name="message"
@@ -146,9 +151,9 @@ export const ContactMe = () => {
                                     </Col>
                                 </Row>
                             </form>
-                        </Col>
+                        </Col> 
 
-                </Row>
+                 </Row> 
             </Container>
         </HelmetProvider>
     )
