@@ -69,7 +69,7 @@ const dataportfolio = [{
     deployedLink:"https://billease.herokuapp.com/"
 },
 {
-    title: "What's Moving?",
+    title: "What's-Moving?",
     img: "https://raw.githubusercontent.com/Joshua-Watson96/RemovalsQuoting/main/client/src/pages/logo/images/wmlogo.PNG",
      description:"A free application to get a house move quote.",
     link:"https://github.com/Joshua-Watson96/RemovalsQuoting",
