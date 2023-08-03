@@ -1,7 +1,8 @@
+/* Sets the properties for .aboutTitle */
 .aboutTitle {
     text-align: center;
   }
-  
+  /* sets the properties for .image */
   .image {
     width: 150px;
     height: 150px;
@@ -9,12 +10,13 @@
     margin-right: 20px;
   }
   
+  /* sets the margin for .infotext */
   .infoText {
     margin-top: 25px;
   }
   
  
-  
+  /* sets the properties for .skills */
   .skills {
     float: left;
     width: 50%;
@@ -23,26 +25,30 @@
   }
   
   
-  
+  /* sets the properties for the .workTimeline th and td */
   .workTimeline th,
   .workTimeline td {
     padding: 5px;
   }
-  
+  /* sets the properties for the .workTimeline th */
   .workTimeline th {
     font-weight: bold;
   }
-
+/* sets the properties for the .skills h2 */
   .skills h2 {
     font-size: 32px;
   }
-  
+  /* sets the properties for the .skills h3 */
   .skills h3 {
     font-size: 16px;
     margin-top: 10px;
   }
-  
+  /* sets the properties for .skills div */
   .skills div {
     margin-bottom: 10px;
+  }
+/* makes the website responsive */
+  @media screen and (max-width: 768px) {
+    
   }
   

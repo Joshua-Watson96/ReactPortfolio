@@ -1,18 +1,19 @@
+/* sets the properties for .body */
 body {
     margin: 0;
     padding: 0;
   }
-  
+  /* sets the properties for .header */
   .header {
     background-color:black;
   }
-  
+  /* sets the properties for the fixed-header */
   .fixed-header {
     background-color: black;
     display: flex;
     justify-content: center;
   }
-  
+  /* sets the properties for the .the_menu */
   .the_menu {
     display: flex;
     list-style: none;
@@ -20,11 +21,11 @@ body {
     margin: 0;
     color: white;
   }
-  
+  /* sets the properties for .menu_item */
   .menu_item {
     margin-right: 20px; 
   }
-  
+  /* sets the properties for the footer */
   .menu_footer {
     background-color: black;
     display: flex;
@@ -34,17 +35,21 @@ body {
     width: 100%;
     padding: 10px;
   }
-  
+  /* sets the properties for .footer-icons */
   .footer-icons {
     display: flex;
   }
-  
+  /* sets properties for .footer-icons a */
   .footer-icons a {
     color: white;
     margin-right: 10px;
     text-decoration: none;
   }
-  
+  /* sets the properties for .link */
   .link {
     color: white;
+  }
+/* makes the website responsive */
+  @media screen and (max-width: 768px) {
+    
   }

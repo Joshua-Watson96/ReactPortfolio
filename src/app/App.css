@@ -1,10 +1,8 @@
+/* sets the header background to black */
 header {
     background-color: black;
 }
-
-.routeDiv{
-    background-color: darkgray;
-    background-image: url(https://cutewallpaper.org/27x/7pmpj468c/101161951.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* makes the website responsvie */
+@media screen and (max-width: 768px) {
+    
 }

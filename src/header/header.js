@@ -17,6 +17,7 @@ const Headermain = () => {
                     <div>
                         <ul className="the_menu">
                             <li className="menu_item">
+                                {/* displays links to menu items */}
                                 <Link to="/" className="link">Home</Link>
                             </li>
                             <li className="menu_item">
@@ -37,6 +38,7 @@ const Headermain = () => {
             </div>
             <div className="menu_footer ">
             <div className="footer-icons">
+                {/* displays the social icons for selected social media */}
                 <a href={socialprofiles.github}><FaGithub /></a>
                 <a href={socialprofiles.linkedin}><FaLinkedin /></a>
                 <a href={socialprofiles.stackOverflow}><FaStackOverflow /></a>

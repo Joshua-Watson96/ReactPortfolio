@@ -1,3 +1,4 @@
+/* sets the properties for the background ID */
 #background {
     display: flex;
     justify-content: center;
@@ -5,12 +6,15 @@
     height: 100vh;
     background-color: white;
   }
-  
+  /* sets the properties for the intro class */
   .intro {
     text-align: center;
   }
-  
+  /* sets the properties for the animiated text */
   .animateText {
     color: black;
   }
-  
+  /* makes the website responsive */
+  @media screen and (max-width: 768px) {
+    
+  }

@@ -1,21 +1,26 @@
+/* properties for .project  */
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
-  
+  /* properties for .project-item */
   .project-item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+  /* properties for .prjImg */
   .prjImg {
     width: 400px;
     height: 150px;
   }
-  
+  /* properties for .description */
   .description {
     text-align: center;
   }
   
+  /* makes portfolio responsive */
+  @media screen and (max-width: 768px) {
+    
+  }
